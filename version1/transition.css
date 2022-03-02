@@ -1,0 +1,129 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+body {
+  /* background-color: #091921; */
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+.content {
+  /* color: #fff; */
+  text-align: center;
+  /* text-transform: uppercase; */
+}
+.content a {
+  display: inline-block;
+  text-decoration: none;
+  /* color: #fff;
+  border: 1px solid #fff; */
+  padding: 10px 15px;
+  width: 200px;
+  margin-top: .1em;
+  transition: 0.3s all ease;
+}
+.content a:hover {
+  color: #091921;
+  background-color: #fff;
+}
+.cover {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: -100vw;
+  z-index: 1000;
+}
+.transition-up.slide .cover1 {
+  background-color: skyblue;
+  animation: slide 0.3s ease-in-out forwards;
+}
+.transition-up.slide .cover2 {
+  background-color: teal;
+  animation: slide 0.3s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+.transition-up.slide .cover3 {
+  background-color: #094992;
+  animation: slide 0.3s ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+@keyframes slide {
+  from {
+    left: -100vw;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.transition-down.slide .cover1 {
+    background-color: skyblue;
+    animation: slide 0.3s ease-in-out forwards;
+  }
+  .transition-down.slide .cover2 {
+    background-color: teal;
+    animation: slide 0.3s ease-in-out forwards;
+    animation-delay: 0.3s;
+  }
+  .transition-down.slide .cover3 {
+    background-color: #094992;
+    animation: slide 0.3s ease-in-out forwards;
+    animation-delay: 0.6s;
+  }
+  @keyframes slide2 {
+    from {
+      up: -100vw;
+    }
+    to {
+      up: 0;
+    }
+  }
+
+/* photoshoot button */
+.containerPhoto {
+    position: absolute;
+    margin-left: -40%;
+    bottom: 48%;
+  }
+  .contentPhoto {
+    text-align: center;
+  }
+  .contentPhoto a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    width: 200px;
+    margin-top: .1em;
+    transition: 0.3s all ease;
+  }
+  .contentPhoto a:hover {
+    color: #091921;
+    background-color: #fff;
+  }
+  /* kitchen button */
+  .containerKitch {
+    position: absolute;
+    margin-left: 40%;
+    bottom: 48%;
+  }
+  .contentKitch {
+    text-align: center;
+  }
+  .contentKitch a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    width: 200px;
+    margin-top: .1em;
+    transition: 0.3s all ease;
+  }
+  .contentKitch a:hover {
+    color: #091921;
+    background-color: #fff;
+  }

@@ -13,3 +13,14 @@ document.onmousemove = function () {
     balls[i].style.transform = "translate(-" + x + ", -" + y + ")";
   }
 };
+
+// multilayer page reveal
+const linkbroom = document.querySelector(".link-broom");
+const transition = document.querySelector(".transition-up");
+linkbroom.addEventListener("click", (e) => {
+  e.preventDefault();
+  transition.classList.add("slide");
+  setTimeout(() => {
+    window.location = linkbroom.href;
+  }, 900);
+});
