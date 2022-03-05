@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -63,27 +62,27 @@ body {
 }
 
 .transition-down.slide .cover1 {
-    background-color: skyblue;
-    animation: slide 0.3s ease-in-out forwards;
+  background-color: skyblue;
+  animation: slide 0.3s ease-in-out forwards;
+}
+.transition-down.slide .cover2 {
+  background-color: teal;
+  animation: slide 0.3s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+.transition-down.slide .cover3 {
+  background-color: #094992;
+  animation: slide 0.3s ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+@keyframes slide2 {
+  from {
+    up: -100vw;
   }
-  .transition-down.slide .cover2 {
-    background-color: teal;
-    animation: slide 0.3s ease-in-out forwards;
-    animation-delay: 0.3s;
+  to {
+    up: 0;
   }
-  .transition-down.slide .cover3 {
-    background-color: #094992;
-    animation: slide 0.3s ease-in-out forwards;
-    animation-delay: 0.6s;
-  }
-  @keyframes slide2 {
-    from {
-      up: -100vw;
-    }
-    to {
-      up: 0;
-    }
-  }
+}
 
 /* photoshoot button */
 .containerPhoto {
