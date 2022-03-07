@@ -6,5 +6,7 @@ h1 {
     font-family: 'Bellota Text';
     font-size: 22px;
     text-align: center;
-    margin-top: 20px;
+    position: absolute;
+    bottom: 5%;
+    right: 40%;
 }

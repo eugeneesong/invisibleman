@@ -1,23 +1,23 @@
 $(document).ready(function() {
   var ripple_wrap = $('.ripple-wrap'),
-      rippler = $('.ripple'),
-      finish = false,
-      monitor = function(el) {
-        var computed = window.getComputedStyle(el, null),
-            borderwidth = parseFloat(computed.getPropertyValue('border-left-width'));
-        if (!finish && borderwidth >= 1500) {
-          el.style.WebkitAnimationPlayState = "paused";
-          el.style.animationPlayState = "paused";
-          swapContent();
-        }
-        if (finish) {
-          el.style.WebkitAnimationPlayState = "running";
-          el.style.animationPlayState = "running";
-          return;
-        } else {
-          window.requestAnimationFrame(function() {monitor(el)});
-        }
-      };
+    rippler = $('.ripple'),
+    finish = false,
+    monitor = function(el) {
+      var computed = window.getComputedStyle(el, null),
+          borderwidth = parseFloat(computed.getPropertyValue('border-left-width'));
+      if (!finish && borderwidth >= 1500) {
+        el.style.WebkitAnimationPlayState = "paused";
+        el.style.animationPlayState = "paused";
+        swapContent();
+      }
+      if (finish) {
+        el.style.WebkitAnimationPlayState = "running";
+        el.style.animationPlayState = "running";
+        return;
+      } else {
+        window.requestAnimationFrame(function() {monitor(el)});
+      }
+};
   
   storedcontent = $('#content-2').html();
   $('#content-2').remove();
