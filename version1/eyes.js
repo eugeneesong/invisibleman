@@ -14,13 +14,46 @@ document.onmousemove = function () {
   }
 };
 
-// multilayer page reveal
+// multilayer page reveal - photobooth left
+const linkphoto = document.querySelector(".link-photo");
+const transitionleft = document.querySelector(".transition-left");
+linkphoto.addEventListener("click", (e) => {
+  e.preventDefault();
+  transitionleft.classList.add("slide-left");
+  setTimeout(() => {
+    window.location = linkphoto.href;
+  }, 900);
+});
+
+// multilayer page reveal - kitchen right
+const linkkitch = document.querySelector(".link-kitchen");
+const transitionright = document.querySelector(".transition-right");
+linkkitch.addEventListener("click", (e) => {
+  e.preventDefault();
+  transitionright.classList.add("slide-right");
+  setTimeout(() => {
+    window.location = linkkitch.href;
+  }, 900);
+});
+
+//fix
+// multilayer page reveal - broom up
 const linkbroom = document.querySelector(".link-broom");
-const transition = document.querySelector(".transition-up");
+const transitionup = document.querySelector(".transition-up");
 linkbroom.addEventListener("click", (e) => {
   e.preventDefault();
-  transition.classList.add("slide");
+  transitionup.classList.add("slide-up");
   setTimeout(() => {
     window.location = linkbroom.href;
+  }, 900);
+});
+
+// multilayer page reveal - closet down
+const linkcloset = document.querySelector(".link-closet");
+const transitiondown = document.querySelector(".transition-down");
+linkcloset.addEventListener("click", (e) => {
+  e.preventDefault();
+  transitiondown.classList.add("slide-down");
+  setTimeout(() => {
   }, 900);
 });

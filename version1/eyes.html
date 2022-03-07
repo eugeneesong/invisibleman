@@ -4,45 +4,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>eye c u</title>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="eyes.css" />
     <link rel="stylesheet" href="transition.css" />
     <link rel="stylesheet" href="intro.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Bellota Text' rel='stylesheet'>
+    <meta charset="UTF-8">
   </head>
   <body>
-    <!-- photobooth -->
-    <div class="containerPhoto">
+    
+
+     <!-- closet -->
+     <div class="containerCloset">
       <div class="transition-down">
         <div class="cover cover1"></div>
         <div class="cover cover2"></div>
         <div class="cover cover3"></div>
       </div>
-      <div class="contentPhoto">
-        <a href="photoshoot.html" class="link-kitchen">
-          photoshoot
-          <i class="fa-solid fa-toilet-paper"></i>
+      <div class="content">
+        <a href="closet.html" class="link-closet">
+          <span style='font-size:20px;'>&#128084;</span> closet 
         </a>
       </div>
     </div>
-    <!-- end of photobooth -->
+    <!-- end of closet -->
+     <!-- bathroom -->
+     <div class="containerBroom">
+      <div class="transition-up">
+        <div class="cover cover1"></div>
+        <div class="cover cover2"></div>
+        <div class="cover cover3"></div>
+      </div>
+      <div class="content">
+        <a href="bathroom.html" class="link-broom">
+          <span style='font-size:20px;'>&#128705;</span>
+          bathroom
+        </a>
+      </div>
+    </div>
+    <!-- end of bathroom -->
 
     <div class="eyes">
-      <!-- bathroom -->
-      <div class="containerBroom">
-        <div class="transition-up">
-          <div class="cover cover1"></div>
-          <div class="cover cover2"></div>
-          <div class="cover cover3"></div>
-        </div>
-        <div class="content">
-          <a href="bathroom.html" class="link-broom">
-            bathroom
-            <i class="fa-solid fa-toilet-paper"></i>
-          </a>
-        </div>
-      </div>
-      <!-- end of bathroom -->
-
       <!-- eyes -->
       <div class="eye">
         <div class="ball"></div>
@@ -51,38 +53,38 @@
         <div class="ball"></div>
       </div>
       <!-- end of eyes -->
-
-      <!-- closet -->
-      <div class="containerCloset">
-        <div class="transition-down">
-          <div class="cover cover1"></div>
-          <div class="cover cover2"></div>
-          <div class="cover cover3"></div>
-        </div>
-        <div class="content">
-          <a href="closet.html" class="link-closet">
-            closet
-            <i class="fa-solid fa-toilet-paper"></i>
-          </a>
-        </div>
-      </div>
-      <!-- end of closet -->
     </div>
+
+
     <!-- kitchen -->
     <div class="containerKitch">
-      <div class="transition-down">
-        <div class="cover cover1"></div>
-        <div class="cover cover2"></div>
-        <div class="cover cover3"></div>
+      <div class="transition-right">
+        <div class="cover-right cover1"></div>
+        <div class="cover-right cover2"></div>
+        <div class="cover-right cover3"></div>
       </div>
-      <div class="contentKitch">
+      <div class="content">
         <a href="kitchen.html" class="link-kitchen">
-          kitchen
-          <i class="fa-solid fa-toilet-paper"></i>
+          <span style='font-size:20px;'>&#127869;</span>  kitchen
         </a>
       </div>
     </div>
     <!-- end of kitchen -->
+    <!-- photobooth -->
+    <div class="containerPhoto">
+      <div class="transition-left">
+        <div class="cover-left cover1"></div>
+        <div class="cover-left cover2"></div>
+        <div class="cover-left cover3"></div>
+      </div>
+      <div class="content">
+        <a href="photoshoot.html" class="link-photo">
+          <span style='font-size:20px;'>&#128248;</span>  photoshoot
+        </a>
+      </div>
+    </div>
+    <!-- end of photobooth -->
+
   </body>
   <script src="eyes.js"></script>
 </html>

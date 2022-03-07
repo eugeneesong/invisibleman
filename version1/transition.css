@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins";
+  font-family: 'Bellota Text';
 }
 body {
   /* background-color: #091921; */
@@ -30,7 +30,7 @@ body {
   color: #091921;
   background-color: #fff;
 }
-.cover {
+.cover-left {
   position: fixed;
   height: 100vh;
   width: 100vw;
@@ -38,21 +38,23 @@ body {
   left: -100vw;
   z-index: 1000;
 }
-.transition-up.slide .cover1 {
-  background-color: skyblue;
-  animation: slide 0.3s ease-in-out forwards;
+
+/* photobooth slide to left*/
+.transition-left.slide-left .cover1 {
+  background-color: #d4905d;
+  animation: slide-left 0.3s ease-in-out forwards;
 }
-.transition-up.slide .cover2 {
-  background-color: teal;
-  animation: slide 0.3s ease-in-out forwards;
+.transition-left.slide-left .cover2 {
+  background-color: #eecc8b;
+  animation: slide-left 0.3s ease-in-out forwards;
   animation-delay: 0.3s;
 }
-.transition-up.slide .cover3 {
-  background-color: #094992;
-  animation: slide 0.3s ease-in-out forwards;
+.transition-left.slide-left .cover3 {
+  background-color: #f3f4db;
+  animation: slide-left 0.3s ease-in-out forwards;
   animation-delay: 0.6s;
 }
-@keyframes slide {
+@keyframes slide-left {
   from {
     left: -100vw;
   }
@@ -61,68 +63,88 @@ body {
   }
 }
 
-.transition-down.slide .cover1 {
-  background-color: skyblue;
-  animation: slide 0.3s ease-in-out forwards;
+/* kitchen slide to right */
+.cover-right {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  right: -100vw;
+  z-index: 1000;
 }
-.transition-down.slide .cover2 {
-  background-color: teal;
-  animation: slide 0.3s ease-in-out forwards;
+.transition-right.slide-right .cover1 {
+  background-color: #ede868;
+  animation: slide-right 0.3s ease-in-out forwards;
+}
+.transition-right.slide-right .cover2 {
+  background-color: #7fd9d6;
+  animation: slide-right 0.3s ease-in-out forwards;
   animation-delay: 0.3s;
 }
-.transition-down.slide .cover3 {
-  background-color: #094992;
-  animation: slide 0.3s ease-in-out forwards;
+.transition-right.slide-right .cover3 {
+  background-color: #c4f2ce;
+  animation: slide-right 0.3s ease-in-out forwards;
   animation-delay: 0.6s;
 }
-@keyframes slide2 {
+@keyframes slide-right {
   from {
-    up: -100vw;
+    right: -100vw;
   }
   to {
-    up: 0;
+    right: 0;
   }
 }
 
-/* photoshoot button */
+/* broom slide up */
+.cover-up {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  top: -100vw;
+  z-index: 1000;
+}
+.transition-up.slide-up .cover1 {
+  background-color: skyblue;
+  animation: slide-up 0.3s ease-in-out forwards;
+}
+.transition-up.slide-up .cover2 {
+  background-color: teal;
+  animation: slide-up 0.3s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+.transition-up.slide-up .cover3 {
+  background-color: #094992;
+  animation: slide-up 0.3s ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+@keyframes slide-up {
+  from {
+    top: -100vw;
+  }
+  to {
+    top: 0;
+  }
+}
+
+/* room buttons */
 .containerPhoto {
     position: absolute;
-    margin-left: -40%;
+    margin-left: -79%;
     bottom: 48%;
-  }
-  .contentPhoto {
-    text-align: center;
-  }
-  .contentPhoto a {
-    display: inline-block;
-    text-decoration: none;
-    padding: 10px 15px;
-    width: 200px;
-    margin-top: .1em;
-    transition: 0.3s all ease;
-  }
-  .contentPhoto a:hover {
-    color: #091921;
-    background-color: #fff;
-  }
-  /* kitchen button */
-  .containerKitch {
+}
+.containerKitch {
     position: absolute;
-    margin-left: 40%;
+    margin-left: 79%;
     bottom: 48%;
-  }
-  .contentKitch {
-    text-align: center;
-  }
-  .contentKitch a {
-    display: inline-block;
-    text-decoration: none;
-    padding: 10px 15px;
-    width: 200px;
-    margin-top: .1em;
-    transition: 0.3s all ease;
-  }
-  .contentKitch a:hover {
-    color: #091921;
-    background-color: #fff;
-  }
+}
+.containerCloset {
+    position: absolute;
+    margin-left: -1%;
+    bottom: 8%;
+}
+.containerBroom {
+    position: absolute;
+    margin-left: -1%;
+    bottom: 88%;
+}

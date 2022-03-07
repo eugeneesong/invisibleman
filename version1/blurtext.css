@@ -27,8 +27,8 @@ body{
 	filter: blur(5px)	
 }
 .mouse{
-	width: 300px;
-	height: 300px;
+	width: 450px;
+	height: 450px;
 	border-radius: 50%;
 	background: url('images/dan.jpg') left top no-repeat;
 	background-attachment: fixed;
@@ -38,5 +38,4 @@ body{
 	top: 50%;
 	pointer-events: none;
 	border: 2px solid #7aa8b7;
-
 }
