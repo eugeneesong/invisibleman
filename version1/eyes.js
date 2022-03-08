@@ -55,5 +55,6 @@ linkcloset.addEventListener("click", (e) => {
   e.preventDefault();
   transitiondown.classList.add("slide-down");
   setTimeout(() => {
+    window.location = linkcloset.href;
   }, 900);
 });
