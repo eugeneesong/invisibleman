@@ -39,7 +39,7 @@ body {
   left: 50%;
   top: 50%;
   pointer-events: none;
-  border: 2px solid #7aa8b7;
+  border: 2px solid #70abff;
 }
 
 #button {
@@ -47,8 +47,8 @@ body {
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
-  color: #ffffff;
-  background-color: #7aa8b7;
+  color: #70abff;
+  background-color: #ffffff;
   border-radius: 6px;
   outline: none;
   position: absolute;

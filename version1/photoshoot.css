@@ -11,8 +11,8 @@ h1 {
 .section {
   position: absolute;
   z-index: 0;
-  width: 50%;
-  height: 100%;
+  width: 34%;
+  height: 50%;
   overflow: hidden;
   cursor: pointer;
   transform: scale(1);
@@ -24,13 +24,37 @@ h1 {
 .section:nth-child(1) {
   top: 0;
   left: 0;
-  background: url(images/dan.jpg);
+  background: url(images/smile.png);
   /* background: rgb(255, 255, 255); */
 }
 .section:nth-child(2) {
   top: 0;
-  left: 50%;
-  background: url(images/dan.jpg);
+  left: 34%;
+  background: url(images/pose.png);
+  /* background: rgb(255, 255, 255); */
+}
+.section:nth-child(3) {
+  top: 50%;
+  left: 0;
+  background: url(images/blow.png);
+  /* background: rgb(255, 255, 255); */
+}
+.section:nth-child(4) {
+  top: 50%;
+  left: 34%;
+  background: url(images/ear.png);
+  /* background: rgb(255, 255, 255); */
+}
+.section:nth-child(5) {
+  top: 0;
+  left: 67%;
+  background: url(images/tan.png);
+  /* background: rgb(255, 255, 255); */
+}
+.section:nth-child(6) {
+  top: 50%;
+  left: 67%;
+  background: url(images/end.png);
   /* background: rgb(255, 255, 255); */
 }
 .section.is-expanded {
@@ -93,4 +117,18 @@ body {
   color: rgb(34, 34, 34);
   font-size: 2rem;
   font-weight: 300;
+}
+
+#button {
+  display: inline-block;
+  padding: 3px 3px;
+  text-align: center;
+  text-decoration: none;
+  color: #70abff;
+  background-color: #ff9a9a;
+  border-radius: 3px;
+  outline: none;
+  position: absolute;
+  margin-left: 98%;
+  bottom: 2%;
 }

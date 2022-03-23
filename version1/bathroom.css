@@ -29,25 +29,25 @@ h1 {
 .section:nth-child(1) {
   top: 0;
   left: 0;
-  /* background: url(images/Group\ 3.png); */
-  background: rgb(255, 255, 255);
+  background: url(images/hair.png);
+  /* background: rgb(255, 255, 255); */
 }
 .section:nth-child(2) {
   top: 0;
   left: 50%;
-  /* background: url(images/Group\ 4.png); */
-  background: rgb(255, 255, 255);
+  background: url(images/shave.png);
+  /* background: rgb(255, 255, 255); */
 }
 .section:nth-child(3) {
   top: 50%;
   left: 0;
-  background: url(images/Group\ 5.png);
+  background: url(images/tub.png);
   /* background: rgb(255, 255, 255); */
 }
 .section:nth-child(4) {
   top: 50%;
   left: 50%;
-  background: url(images/Group\ 7.png);
+  background: url(images/dry.png);
   /* background: rgb(255, 255, 255); */
 }
 .section.is-expanded {
@@ -106,4 +106,18 @@ body {
   color: rgb(34, 34, 34);
   font-size: 2rem;
   font-weight: 300;
+}
+
+#button {
+  display: inline-block;
+  padding: 3px 3px;
+  text-align: center;
+  text-decoration: none;
+  color: #70abff;
+  background-color: #ff9a9a;
+  border-radius: 3px;
+  outline: none;
+  position: absolute;
+  margin-left: 98%;
+  bottom: 2%;
 }

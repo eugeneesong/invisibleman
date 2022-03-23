@@ -24,13 +24,13 @@ h1 {
 .section:nth-child(1) {
   top: 0;
   left: 0;
-  background: url(images/dan.jpg);
+  background: url(images/clothes.png);
   /* background: rgb(255, 255, 255); */
 }
 .section:nth-child(2) {
   top: 0;
   left: 50%;
-  background: url(images/dan.jpg);
+  background: url(images/why.png);
   /* background: rgb(255, 255, 255); */
 }
 .section.is-expanded {
@@ -82,7 +82,7 @@ html {
 body {
   margin: 0;
   font: 16px/1.5 "Roboto Slab", sans-serif;
-  background: #000;
+  background: rgb(255, 255, 255);
 }
 
 .demo-box {
@@ -93,4 +93,18 @@ body {
   color: rgb(34, 34, 34);
   font-size: 2rem;
   font-weight: 300;
+}
+
+#button {
+  display: inline-block;
+  padding: 3px 3px;
+  text-align: center;
+  text-decoration: none;
+  color: #70abff;
+  background-color: #ff9a9a;
+  border-radius: 3px;
+  outline: none;
+  position: absolute;
+  margin-left: 98%;
+  bottom: 2%;
 }
