@@ -6,12 +6,14 @@
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 body {
   font-family: arial;
   font-size: 16px;
   margin: 0;
   background: #fff;
 }
+
 .mouse_area_wrap {
   background: #7aa8b7;
   width: 100%;
@@ -19,6 +21,7 @@ body {
   overflow: hidden;
   position: relative;
 }
+
 .mouse_hover_area {
   width: 100%;
   height: 100vh;
@@ -28,6 +31,7 @@ body {
   opacity: 0.95;
   filter: blur(50px);
 }
+
 .mouse {
   width: 500px;
   height: 500px;

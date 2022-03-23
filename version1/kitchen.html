@@ -1,16 +1,73 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="kitchen.css" />
-    <link href='https://fonts.googleapis.com/css?family=Bellota Text' rel='stylesheet'>
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Bellota Text"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <h1>welcome to my kitchen</h1>
-    <audio autoplay="true" >
-        <source id="song1" src="sound/eat.mp3">
+    <audio autoplay="true">
+      <source id="song1" src="sound/eat.mp3" />
     </audio>
-</body>
+    <main class="main">
+      <section class="section">
+        <div class="close-section">&times;</div>
+        <div class="demo-box">
+          <!-- soap -->
+        </div>
+      </section>
+      <section class="section">
+        <div class="close-section">&times;</div>
+        <div class="demo-box">
+          <!-- tub -->
+        </div>
+      </section>
+    </main>
+  </body>
+
+  <script>
+    const Boxlayout = (() => {
+      const wrapper = document.body,
+        sections = [...document.querySelectorAll(".section")],
+        closeButtons = [...document.querySelectorAll(".close-section")],
+        expandedClass = "is-expanded",
+        hasExpandedClass = "has-expanded-item";
+
+      const initEvents = () => {
+        sections.forEach((element) => {
+          element.addEventListener("click", () => openSection(element));
+        });
+        closeButtons.forEach((element) => {
+          element.addEventListener("click", (event) => {
+            event.stopPropagation();
+            closeSection(element.parentElement);
+          });
+        });
+      };
+
+      const openSection = (element) => {
+        if (!element.classList.contains(expandedClass)) {
+          element.classList.add(expandedClass);
+          wrapper.classList.add(hasExpandedClass);
+        }
+      };
+
+      const closeSection = (element) => {
+        if (element.classList.contains(expandedClass)) {
+          element.classList.remove(expandedClass);
+          wrapper.classList.remove(hasExpandedClass);
+        }
+      };
+
+      return { init: initEvents };
+    })();
+
+    Boxlayout.init();
+  </script>
 </html>

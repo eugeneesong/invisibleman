@@ -12,6 +12,72 @@
    <audio autoplay="true" >
       <source id="song1" src="sound/bubble.mp3">
   </audio>
+  <main class="main">
+    <section class="section">
+      <div class="close-section">&times;</div>
+      <div class="demo-box">
+        <!-- shaver -->
+      </div>
+    </section>
+    <section class="section">
+      <div class="close-section">&times;</div>
+      <div class="demo-box">
+        <!-- comb -->
+      </div>
+    </section>
+    <section class="section">
+      <div class="close-section">&times;</div>
+      <div class="demo-box">
+        <!-- soap -->
+      </div>
+    </section>
+    <section class="section">
+      <div class="close-section">&times;</div>
+      <div class="demo-box">
+        <!-- tub -->
+      </div>
+    </section>
+  </main>
+</body>
+
+<script>
+  const Boxlayout = (() => {
+    const wrapper = document.body,
+      sections = [...document.querySelectorAll(".section")],
+      closeButtons = [...document.querySelectorAll(".close-section")],
+      expandedClass = "is-expanded",
+      hasExpandedClass = "has-expanded-item";
+
+    const initEvents = () => {
+      sections.forEach((element) => {
+        element.addEventListener("click", () => openSection(element));
+      });
+      closeButtons.forEach((element) => {
+        element.addEventListener("click", (event) => {
+          event.stopPropagation();
+          closeSection(element.parentElement);
+        });
+      });
+    };
+
+    const openSection = (element) => {
+      if (!element.classList.contains(expandedClass)) {
+        element.classList.add(expandedClass);
+        wrapper.classList.add(hasExpandedClass);
+      }
+    };
+
+    const closeSection = (element) => {
+      if (element.classList.contains(expandedClass)) {
+        element.classList.remove(expandedClass);
+        wrapper.classList.remove(hasExpandedClass);
+      }
+    };
+
+    return { init: initEvents };
+  })();
+
+  Boxlayout.init();
 </script>
 </body>
 </html>
